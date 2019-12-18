@@ -32,6 +32,6 @@ from pyspark.ml.feature import StringIndexer, VectorAssembler
 from pyspark.ml import Pipeline
 from pyspark.sql.functions import col
 
-spark.sparkContext.addPyFile(".../xgboost_script/sparkxgb.zip")
+spark.sparkContext.addPyFile(".../xgboost_script/sparkxgb.zip")#可以是本地地址也可以是线上地址HDFS
 from sparkxgb import XGBoostEstimator
 from pyspark.ml.classification import LogisticRegression
