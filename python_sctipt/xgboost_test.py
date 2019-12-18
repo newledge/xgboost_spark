@@ -16,7 +16,7 @@ os.environ['PYSPARK_SUBMIT_ARGS'] = '--jars xgboost4j-spark-0.72.jar,xgboost4j-0
 input=sys.argv[1]
 #output=sys.argv[2]
 
-conf = SparkConf().setMaster("spark://master:7077").setAppName("shitu").set('spark.cores.max', 32).set("spark.executor.cores", '4')
+conf = SparkConf().setMaster("spark://master:7077").setAppName("xgb").set('spark.cores.max', 32).set("spark.executor.cores", '4')
 sc = SparkContext(conf = conf)
 
 spark = SparkSession\
